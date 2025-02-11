@@ -6,15 +6,23 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf dist && cd frontend && npm run build && cp -r dist ../ && cd ../"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.0",
+    "mongose": "^0.0.2-security",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@stylistic/eslint-plugin-js": "^3.1.0",
+    "eslint": "^9.20.0",
     "nodemon": "^3.1.9"
   }
 }
