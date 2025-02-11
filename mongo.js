@@ -10,7 +10,7 @@ const password = process.argv[2]
 const PersonName=process.argv[3]
 const PersonNumber= process.argv[4]
 const url =
-  `mongodb+srv://bukajfullstack:${password}@cluster1.menjafx.mongodb.net/?retryWrites=true&w=majority`
+  `mongodb+srv://bukajfullstack:${password}@cluster1.menjafx.mongodb.net/persons?retryWrites=true&w=majority`
 
 
 mongoose.set('strictQuery',false)
